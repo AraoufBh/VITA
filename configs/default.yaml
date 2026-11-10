@@ -1,0 +1,69 @@
+# Default configuration of the VITA study. Every assumption of the case study is listed here.
+tier: A                       # A: OPSD + When2Heat (Germany); B: ENTSO-E Spain via the Darts dataset file
+economics:
+  currency_year: 2020         # all costs converted to EUR of 2020
+  inflation: 0.02             # per year, applied with the currency_year column of technology-data
+  discount_rate: 0.07         # per year (assumption)
+costs_file:
+  url: https://raw.githubusercontent.com/PyPSA/technology-data/v0.13.0/outputs/costs_2030.csv
+  sha256: 0407b2c60ee2cabb06064648956f3b77ad1a8ab0e99d30aeb5eafa09772c5573
+case:
+  el_base: 12.0               # MW, electricity demand base (assumption)
+  el_peak_add: 8.0            # MW added on weekdays 06:00-22:00 (assumption)
+  ht_base: 10.0               # MW, high-temperature process heat base (assumption)
+  ht_peak_add: 20.0           # MW added on weekdays 06:00-22:00 (assumption)
+  h2_demand: 8.0              # MW (LHV), constant hydrogen feedstock (assumption)
+  lt_annual_gwh: 120.0        # Tier A: When2Heat DE profile scaled to 120 GWh/a (assumption)
+  lt_base: 6.0                # Tier B: MW base (assumption)
+  lt_peak_add: 6.0            # Tier B: MW added on weekdays 06:00-22:00 (assumption)
+  peak_hours: [6, 22]         # weekday window [start, end) in local fixed UTC+1 time
+  grid_limit: 40.0            # MW import and export (assumption)
+  import_adder: 30.0          # EUR/MWh network charges and levies (assumption)
+  export_discount: 2.0        # EUR/MWh (assumption)
+  co2_prices: [80.0, 150.0, 250.0]   # EUR/t (assumption)
+  co2_central: 150.0
+  tes_time_constant_days: 180.0      # thermal tank standing loss time constant (assumption)
+  pv_max: 150.0               # MW_p potential (assumption)
+  wind_max: 150.0             # MW potential (assumption)
+  unserved_penalty: 3000.0    # EUR/MWh for every carrier (assumption)
+data:
+  years: [2015, 2016, 2017, 2018, 2019]
+  max_interp_gap: 3           # hours, linear interpolation; longer gaps: same hour previous week
+experiment:
+  K_grid: [4, 8, 16]          # reduced from [4, 8, 12, 16, 24] by the compute-budget rule
+  K_main: [8, 16]
+  seeds: [0, 1, 2]            # reduced from 5 seeds by the compute-budget rule
+  dev_seeds: [0, 1, 2]
+  ablation_seeds: [0]         # ablations with one seed (compute budget, see docs/development_log.md)
+  ablation_baseline: KMed     # best baseline on the validation year at K = 8 (used for ablation A5)
+  budget_hours: 4.0
+vita:
+  m: 16
+  channels: 32
+  tau_start: 1.0
+  tau_end: 0.05
+  st_steps: 20                # straight-through hard-assignment steps at the end of training
+  alpha: 0.5
+  lambda_rec: 0.05
+  lambda_ent: 0.01
+  M: 4
+  delta_frac: 0.05
+  rho_onpolicy: 3.0
+  J0: 16                      # reduced from 24 by the compute-budget rule
+  lhs_low: 0.3
+  lhs_high: 1.8
+  zero_cap_frac: 0.2
+  zero_cap_default: 5.0
+  pretrain_epochs: 200
+  R: 6
+  S: 25                       # reduced from 50 (two CPU cores, see docs/development_log.md)
+  lr_theta: 0.003
+  lr_mu: 0.01
+  weight_decay: 1.0e-5
+  batch_per_year: 6
+  anchors_from_baselines: [KM, HC, HCX]
+  encoder: conv
+  representation: mean        # mean or medoid (snapping at inference)
+  loss_norm: tac              # denominators TAC_y(x^j)^2 (dev cycle 1); 'value' uses V_y(x^j)^2
+  proto_init: kmeans          # k-means with k-means++ seeding (dev cycle 1); 'seed' uses the seeds only
+  block: 10                   # consecutive Adam steps per minibatch (warm-started LP models)

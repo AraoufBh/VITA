@@ -1,0 +1,19 @@
+{
+ "rows": 35064,
+ "sha256": "6ccdba32b23e4ebb7fa4dc31b93848ea778e5c918007a5ebbb6fa2cc993886c5",
+ "expected_sha256": "6ccdba32b23e4ebb7fa4dc31b93848ea778e5c918007a5ebbb6fa2cc993886c5",
+ "filled_hours": {
+  "pv_2015": 16,
+  "wind_2015": 16,
+  "price_2015": 0,
+  "pv_2016": 1,
+  "wind_2016": 1,
+  "price_2016": 0,
+  "pv_2017": 0,
+  "wind_2017": 0,
+  "price_2017": 0,
+  "pv_2018": 1,
+  "wind_2018": 1,
+  "price_2018": 0
+ }
+}

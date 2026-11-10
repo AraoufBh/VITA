@@ -1,0 +1,17 @@
+python 3.13.18 on Linux-6.18.44-fc-v338-x86_64-with-glibc2.39
+cpu count 2
+ram 7.8 GiB
+disk free 22 GiB
+pdflatex: /usr/bin/pdflatex
+bibtex: /usr/bin/bibtex
+latexmk: /usr/bin/latexmk
+pdftotext: /usr/bin/pdftotext
+pdftoppm: /usr/local/bin/pdftoppm
+kpsewhich: /usr/bin/kpsewhich
+IEEEtran.cls: /usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+data.open-power-system-data.org: unreachable (URLError)
+raw.githubusercontent.com: reachable (HTTP 400)
+pypi.org: reachable (HTTP 200)
+doi.org: unreachable (URLError)
+api.crossref.org: unreachable (URLError)
+download.pytorch.org: unreachable (URLError)
