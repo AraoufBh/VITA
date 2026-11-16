@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "VITA: value-informed neural temporal aggregation for sector-coupled industrial energy hubs"
+authors:
+  - family-names: Bahi
+    given-names: Abderaouf
+    affiliation: "LIMA Laboratory, Chadli Bendjedid El Tarf University, El Tarf, Algeria"
+    email: a.bahi@univ-eltarf.dz
+version: 1.0.0
+date-released: 2026-11-10
+license: MIT

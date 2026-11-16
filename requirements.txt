@@ -1,0 +1,15 @@
+# pinned versions used for the published run (pip freeze subset, Python 3.13)
+# torch: the CPU wheel index (https://download.pytorch.org/whl/cpu) is preferred when reachable
+numpy==2.4.6
+scipy==1.18.1
+highspy==1.15.1
+pandas==3.0.5
+pyarrow==26.0.1
+scikit-learn==1.9.1
+tsam==4.1.1
+kmedoids==0.5.5
+joblib==1.6.0
+PyYAML==6.0.3
+matplotlib==3.11.2
+pytest==9.1.1
+torch==2.15.0

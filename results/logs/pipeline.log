@@ -1,0 +1,419 @@
+[08:37:30] data tier B: years [2015, 2016, 2017, 2018]; info {'pv_2015': 16, 'wind_2015': 16, 'price_2015': 0, 'pv_2016': 1, 'wind_2016': 1, 'price_2016': 0, 'pv_2017': 0, 'wind_2017': 0, 'price_2017': 0, 'pv_2018': 1, 'wind_2018': 1, 'price_2018': 0}
+[08:37:30] stage data finished in 0s
+[08:41:29] anchors done for 6 (fold, year, K)
+[08:41:29] stage anchors finished in 145s
+[08:46:05] dev baseline KM K=8: val regret 0.2780
+[08:46:05] dev baseline KMed K=8: val regret 0.2550
+[08:46:05] dev baseline HC K=8: val regret 0.7338
+[08:46:05] dev baseline HCX K=8: val regret 0.3339
+[08:46:05] dev baseline DP K=8: val regret 0.5106
+[08:46:05] dev baseline AE K=8: val regret 0.7814
+[08:46:05] dev baseline CO K=8: val regret 0.3095
+[08:46:05] dev baseline IX K=8: val regret 0.3979
+[08:46:05] dev baseline KM K=16: val regret 0.3524
+[08:46:05] dev baseline KMed K=16: val regret 0.0924
+[08:46:05] dev baseline HC K=16: val regret 0.2631
+[08:46:05] dev baseline HCX K=16: val regret 0.6084
+[08:46:05] dev baseline DP K=16: val regret 0.3134
+[08:46:05] dev baseline AE K=16: val regret 0.2374
+[08:46:05] dev baseline CO K=16: val regret 0.1982
+[08:46:05] dev baseline IX K=16: val regret 0.7361
+[08:46:05] stage dev-baselines finished in 58s
+[08:47:34] [F2018 full] K=8 seed=0 iter=1 val_regret=3.5785 value_err=0.6227
+[08:47:37] [F2018 full] K=8 seed=1 iter=1 val_regret=9.3415 value_err=0.7007
+[08:48:19] [F2018 full] K=8 seed=0 iter=2 val_regret=0.9197 value_err=0.5354
+[08:48:29] [F2018 full] K=8 seed=1 iter=2 val_regret=0.6991 value_err=1.8054
+[08:49:08] [F2018 full] K=8 seed=0 iter=3 val_regret=0.9832 value_err=0.4936
+[08:49:16] [F2018 full] K=8 seed=1 iter=3 val_regret=0.3334 value_err=1.5350
+[08:49:51] [F2018 full] K=8 seed=0 iter=4 val_regret=3.4318 value_err=0.4674
+[08:49:57] [F2018 full] K=8 seed=1 iter=4 val_regret=0.6554 value_err=1.1027
+[08:50:30] [F2018 full] K=8 seed=0 iter=5 val_regret=1.8504 value_err=1.1256
+[08:50:41] [F2018 full] K=8 seed=1 iter=5 val_regret=0.5663 value_err=1.0903
+[08:51:32] [F2018 full] K=8 seed=1 iter=6 val_regret=0.7449 value_err=1.2577
+[08:51:43] [F2018 full] K=8 seed=0 iter=6 val_regret=2.3075 value_err=1.3276
+[08:52:47] [F2018 full] K=8 seed=2 iter=1 val_regret=1.2568 value_err=0.6699
+[08:53:36] [F2018 full] K=8 seed=2 iter=2 val_regret=3.1820 value_err=0.5839
+[08:54:20] [F2018 full] K=8 seed=2 iter=3 val_regret=0.8500 value_err=0.7540
+[08:55:07] [F2018 full] K=8 seed=2 iter=4 val_regret=3.3330 value_err=0.3836
+[08:56:35] [F2018 full] K=8 seed=1 iter=1 val_regret=2.0181 value_err=0.0811
+[08:56:39] [F2018 full] K=8 seed=0 iter=1 val_regret=0.2035 value_err=0.0627
+[08:58:48] [F2018 full] K=8 seed=1 iter=1 val_regret=2.0181 value_err=0.0811
+[08:58:52] [F2018 full] K=8 seed=0 iter=1 val_regret=0.2035 value_err=0.0627
+[08:59:36] [F2018 full] K=8 seed=1 iter=2 val_regret=1.3968 value_err=0.1053
+[08:59:48] [F2018 full] K=8 seed=0 iter=2 val_regret=4.3693 value_err=0.1183
+[09:00:32] [F2018 full] K=8 seed=1 iter=3 val_regret=287.9067 value_err=0.1128
+[09:00:43] [F2018 full] K=8 seed=0 iter=3 val_regret=2.9294 value_err=0.1064
+[09:01:17] [F2018 full] K=8 seed=1 iter=4 val_regret=1.7374 value_err=0.1950
+[09:01:35] [F2018 full] K=8 seed=0 iter=4 val_regret=1.2806 value_err=0.1344
+[09:02:05] [F2018 full] K=8 seed=1 iter=5 val_regret=1.2829 value_err=0.1111
+[09:02:19] [F2018 full] K=8 seed=0 iter=5 val_regret=2.2904 value_err=0.1128
+[09:03:02] [F2018 full] K=8 seed=1 iter=6 val_regret=2.2059 value_err=0.1345
+[09:03:07] [F2018 full] K=8 seed=0 iter=6 val_regret=3.4253 value_err=0.1200
+[09:05:37] [F2018 full] K=8 seed=0 iter=1 val_regret=2.5855 value_err=0.0875
+[09:06:23] [F2018 full] K=8 seed=0 iter=2 val_regret=2.7887 value_err=0.1468
+[09:07:14] [F2018 full] K=8 seed=0 iter=3 val_regret=1.3000 value_err=0.1395
+[09:08:11] [F2018 full] K=8 seed=0 iter=4 val_regret=372.0310 value_err=0.1561
+[09:08:27] [F2018 full 30c6e8] K=8 seed=2 iter=1 val_regret=228.8156 value_err=0.0933
+[09:09:08] [F2018 full 30c6e8] K=8 seed=2 iter=2 val_regret=2.8810 value_err=0.0863
+[09:09:56] [F2018 full 30c6e8] K=8 seed=2 iter=3 val_regret=2.8004 value_err=0.0869
+[09:10:10] [F2018 full 106511] K=8 seed=0 iter=1 val_regret=0.6385 value_err=0.0482
+[09:10:47] [F2018 full 30c6e8] K=8 seed=2 iter=4 val_regret=93.3336 value_err=0.1051
+[09:10:57] [F2018 full 106511] K=8 seed=0 iter=2 val_regret=3.1095 value_err=0.0600
+[09:11:36] [F2018 full 30c6e8] K=8 seed=2 iter=5 val_regret=159.0405 value_err=0.1097
+[09:11:50] [F2018 full 106511] K=8 seed=0 iter=3 val_regret=25.0472 value_err=0.0968
+[09:12:29] [F2018 full 106511] K=8 seed=0 iter=4 val_regret=2.0844 value_err=0.1256
+[09:12:29] [F2018 full 30c6e8] K=8 seed=2 iter=6 val_regret=321.8229 value_err=0.1539
+[09:12:31] DEV[cycle1] K=8: VITA 0.6832 [0.2035 0.9495 0.8965] | best KMed 0.2550 | ratio 2.679
+[09:12:31] stage dev finished in 327s
+[09:13:11] [F2018 full 106511] K=8 seed=0 iter=5 val_regret=2.2382 value_err=0.0945
+[09:14:15] [F2018 full 106511] K=8 seed=0 iter=6 val_regret=0.6471 value_err=0.1308
+[09:14:59] [F2018 full 9ebac1] K=8 seed=0 iter=1 val_regret=0.5805 value_err=0.0444
+[09:15:37] [F2018 full da5b58] K=8 seed=1 iter=1 val_regret=2.2358 value_err=0.0651
+[09:15:49] [F2018 full 9ebac1] K=8 seed=0 iter=2 val_regret=2.0462 value_err=0.0798
+[09:16:28] [F2018 full da5b58] K=8 seed=1 iter=2 val_regret=2.3892 value_err=0.0647
+[09:16:42] [F2018 full 9ebac1] K=8 seed=0 iter=3 val_regret=2.9805 value_err=0.0720
+[09:17:20] [F2018 full da5b58] K=8 seed=1 iter=3 val_regret=2.3000 value_err=0.1101
+[09:17:34] [F2018 full 9ebac1] K=8 seed=0 iter=4 val_regret=3.0166 value_err=0.1474
+[09:19:22] [F2018 full c6a57c] K=8 seed=1 iter=1 val_regret=1.7930 value_err=0.0772
+[09:19:24] [F2018 full 88bc02] K=8 seed=0 iter=1 val_regret=2.1060 value_err=0.0591
+[09:20:08] [F2018 full c6a57c] K=8 seed=1 iter=2 val_regret=1.7168 value_err=0.1126
+[09:20:13] [F2018 full 88bc02] K=8 seed=0 iter=2 val_regret=2.9432 value_err=0.0792
+[09:21:57] [F2018 full 0b170a] K=8 seed=0 iter=1 val_regret=0.2671 value_err=0.0805
+[09:22:00] [F2018 full f705e2] K=8 seed=1 iter=1 val_regret=33.7731 value_err=0.0893
+[09:22:49] [F2018 full 0b170a] K=8 seed=0 iter=2 val_regret=1.1610 value_err=0.1170
+[09:22:52] [F2018 full f705e2] K=8 seed=1 iter=2 val_regret=1.2198 value_err=0.1142
+[09:23:59] [F2018 full 0b170a] K=8 seed=0 iter=3 val_regret=3.6431 value_err=0.1119
+[09:24:15] [F2018 full f705e2] K=8 seed=1 iter=3 val_regret=203.9884 value_err=0.1257
+[09:25:29] [F2018 full 0b170a] K=8 seed=0 iter=4 val_regret=2.6533 value_err=0.1024
+[09:25:52] [F2018 full f705e2] K=8 seed=1 iter=4 val_regret=113.3386 value_err=0.0931
+[09:30:10] anchors done for 24 (fold, year, K)
+[09:30:10] stage anchors finished in 250s
+[09:33:19] [F2018 full af0db0] K=16 seed=0 iter=1 val_regret=1.9602 value_err=0.0505
+[09:35:21] [F2018 full af0db0] K=16 seed=0 iter=2 val_regret=2.0963 value_err=0.1237
+[09:37:14] [F2018 full af0db0] K=16 seed=0 iter=3 val_regret=2.4070 value_err=0.1092
+[09:39:08] [F2018 full af0db0] K=16 seed=0 iter=4 val_regret=1.5523 value_err=0.1694
+[09:40:55] [F2018 full af0db0] K=16 seed=0 iter=5 val_regret=1.9220 value_err=0.1340
+[09:42:56] [F2018 full af0db0] K=16 seed=0 iter=6 val_regret=2.0634 value_err=0.1671
+[09:45:49] [F2018 full 2024a5] K=16 seed=1 iter=1 val_regret=2.1897 value_err=0.1310
+[09:47:07] [F2018 full 2024a5] K=16 seed=1 iter=2 val_regret=1.9487 value_err=0.1075
+[09:48:37] [F2018 full 2024a5] K=16 seed=1 iter=3 val_regret=1.9581 value_err=0.0941
+[09:50:42] [F2018 full 2024a5] K=16 seed=1 iter=4 val_regret=1.3271 value_err=0.1182
+[09:52:30] [F2018 full 2024a5] K=16 seed=1 iter=5 val_regret=2.2193 value_err=0.1392
+[09:54:04] [F2018 full 2024a5] K=16 seed=1 iter=6 val_regret=1.1803 value_err=0.1998
+[09:56:49] [F2018 full 8fdfbc] K=16 seed=2 iter=1 val_regret=0.5641 value_err=0.0833
+[09:58:46] [F2018 full 8fdfbc] K=16 seed=2 iter=2 val_regret=105.6214 value_err=0.1040
+[10:01:10] [F2018 full 8fdfbc] K=16 seed=2 iter=3 val_regret=113.1789 value_err=0.1178
+[10:03:12] [F2018 full 8fdfbc] K=16 seed=2 iter=4 val_regret=2.0168 value_err=0.1083
+[10:05:20] [F2018 full 8fdfbc] K=16 seed=2 iter=5 val_regret=0.5386 value_err=0.1210
+[10:08:28] [F2018 full 8fdfbc] K=16 seed=2 iter=6 val_regret=1.7416 value_err=0.1150
+[10:10:07] [F2018 full 34c8f2] K=4 seed=0 iter=1 val_regret=2.6247 value_err=0.0488
+[10:11:03] [F2018 full 34c8f2] K=4 seed=0 iter=2 val_regret=141.1884 value_err=0.1435
+[10:11:47] [F2018 full 34c8f2] K=4 seed=0 iter=3 val_regret=3.0168 value_err=0.1136
+[10:12:36] [F2018 full 34c8f2] K=4 seed=0 iter=4 val_regret=3.2239 value_err=0.1097
+[10:13:15] [F2018 full 34c8f2] K=4 seed=0 iter=5 val_regret=3.2318 value_err=0.1191
+[10:13:52] [F2018 full 34c8f2] K=4 seed=0 iter=6 val_regret=2.1487 value_err=0.1297
+[10:15:22] [F2018 full 5f84d6] K=4 seed=1 iter=1 val_regret=2.3081 value_err=0.0733
+[10:16:03] [F2018 full 5f84d6] K=4 seed=1 iter=2 val_regret=2.9896 value_err=0.0867
+[10:16:49] [F2018 full 5f84d6] K=4 seed=1 iter=3 val_regret=3.4269 value_err=0.1270
+[10:17:30] [F2018 full 5f84d6] K=4 seed=1 iter=4 val_regret=3.4344 value_err=0.1024
+[10:18:15] [F2018 full 5f84d6] K=4 seed=1 iter=5 val_regret=3.4279 value_err=0.1072
+[10:18:56] [F2018 full 5f84d6] K=4 seed=1 iter=6 val_regret=3.1244 value_err=0.1297
+[10:20:26] [F2018 full 23ce43] K=4 seed=2 iter=1 val_regret=2.9805 value_err=0.0811
+[10:21:08] [F2018 full 23ce43] K=4 seed=2 iter=2 val_regret=2.4494 value_err=0.0953
+[10:21:55] [F2018 full 23ce43] K=4 seed=2 iter=3 val_regret=2.8975 value_err=0.1377
+[10:22:37] [F2018 full 23ce43] K=4 seed=2 iter=4 val_regret=85.6712 value_err=0.1165
+[10:23:20] [F2018 full 23ce43] K=4 seed=2 iter=5 val_regret=3.1763 value_err=0.1334
+[10:23:59] [F2018 full 23ce43] K=4 seed=2 iter=6 val_regret=3.0396 value_err=0.1362
+[10:23:59] trained 6 VITA models (('full',))
+[10:23:59] stage train finished in 3226s
+[10:24:59] baselines evaluated: 192
+[10:24:59] stage baselines finished in 1196s
+[10:32:40] [F2015 full 5d2be6] K=16 seed=2 iter=1 val_regret=0.5058 value_err=0.0910
+[10:34:38] [F2015 full 5d2be6] K=16 seed=2 iter=2 val_regret=3.4323 value_err=0.0970
+[10:36:05] oracle 2016 80.0: TAC=18255560 t=445s
+[10:36:05] oracle 2015 80.0: TAC=15978704 t=447s
+[10:36:05] oracle 2017 80.0: TAC=14314402 t=513s
+[10:36:05] oracle 2018 80.0: TAC=14601421 t=384s
+[10:36:05] oracle 2015 150.0: TAC=16215419 t=404s
+[10:36:05] oracle 2017 150.0: TAC=14641543 t=460s
+[10:36:05] oracle 2018 150.0: TAC=14931246 t=2670s
+[10:36:05] oracle 2016 150.0: TAC=18559544 t=428s
+[10:36:05] oracle 2015 250.0: TAC=16215419 t=581s
+[10:36:05] oracle 2017 250.0: TAC=14645781 t=533s
+[10:36:05] oracle 2018 250.0: TAC=14931246 t=410s
+[10:36:05] oracle 2016 250.0: TAC=18559544 t=684s
+[10:36:06] stage oracle finished in 3s
+[10:36:17] [F2015 full 5d2be6] K=16 seed=2 iter=3 val_regret=2.7316 value_err=0.1244
+[10:38:13] [F2015 full 5d2be6] K=16 seed=2 iter=4 val_regret=2.0227 value_err=0.0981
+[10:40:20] [F2017 full 3d8b45] K=16 seed=1 iter=1 val_regret=1.1146 value_err=0.1310
+[10:40:27] [F2017 full 384efd] K=16 seed=0 iter=1 val_regret=0.5119 value_err=0.0505
+[10:41:31] [F2017 full 3d8b45] K=16 seed=1 iter=2 val_regret=1.1752 value_err=0.1075
+[10:42:20] [F2017 full 384efd] K=16 seed=0 iter=2 val_regret=1.4625 value_err=0.1237
+[10:42:52] [F2017 full 3d8b45] K=16 seed=1 iter=3 val_regret=0.9226 value_err=0.0941
+[10:44:11] [F2017 full 384efd] K=16 seed=0 iter=3 val_regret=1.8666 value_err=0.1092
+[10:44:42] [F2017 full 3d8b45] K=16 seed=1 iter=4 val_regret=0.6468 value_err=0.1182
+[10:46:05] [F2017 full 384efd] K=16 seed=0 iter=4 val_regret=1.6585 value_err=0.1694
+[10:46:21] [F2017 full 3d8b45] K=16 seed=1 iter=5 val_regret=0.7865 value_err=0.1392
+[10:47:47] [F2017 full 3d8b45] K=16 seed=1 iter=6 val_regret=3.5097 value_err=0.1998
+[10:47:50] [F2017 full 384efd] K=16 seed=0 iter=5 val_regret=1.8766 value_err=0.1340
+[10:49:51] [F2017 full 384efd] K=16 seed=0 iter=6 val_regret=2.7968 value_err=0.1671
+[10:50:31] [F2017 full e9ca75] K=16 seed=2 iter=1 val_regret=0.4955 value_err=0.0833
+[10:52:22] [F2017 full e9ca75] K=16 seed=2 iter=2 val_regret=1.1796 value_err=0.1040
+[10:52:55] [F2016 full 52f6cd] K=16 seed=0 iter=1 val_regret=0.9779 value_err=0.0912
+[10:54:32] [F2017 full e9ca75] K=16 seed=2 iter=3 val_regret=1.5741 value_err=0.1178
+[10:54:41] [F2016 full 52f6cd] K=16 seed=0 iter=2 val_regret=0.2988 value_err=0.1271
+[10:56:19] [F2016 full 52f6cd] K=16 seed=0 iter=3 val_regret=0.7438 value_err=0.1015
+[10:56:32] [F2017 full e9ca75] K=16 seed=2 iter=4 val_regret=2.1226 value_err=0.1083
+[10:58:20] [F2016 full 52f6cd] K=16 seed=0 iter=4 val_regret=0.9327 value_err=0.1024
+[10:58:25] [F2017 full e9ca75] K=16 seed=2 iter=5 val_regret=2.8271 value_err=0.1210
+[11:00:23] [F2017 full e9ca75] K=16 seed=2 iter=6 val_regret=1.9010 value_err=0.1150
+[11:00:29] [F2016 full 52f6cd] K=16 seed=0 iter=5 val_regret=1.6968 value_err=0.1338
+[11:03:12] [F2016 full 52f6cd] K=16 seed=0 iter=6 val_regret=1.9302 value_err=0.1499
+[11:03:22] [F2016 full 4165b4] K=16 seed=1 iter=1 val_regret=0.8431 value_err=0.0812
+[11:05:00] [F2016 full 4165b4] K=16 seed=1 iter=2 val_regret=0.4100 value_err=0.0992
+[11:05:53] [F2016 full 23d4e9] K=16 seed=2 iter=1 val_regret=2.2102 value_err=0.1481
+[11:07:05] [F2016 full 4165b4] K=16 seed=1 iter=3 val_regret=2.6442 value_err=0.1440
+[11:07:25] [F2016 full 23d4e9] K=16 seed=2 iter=2 val_regret=0.6117 value_err=0.1050
+[11:08:22] [F2016 full 4165b4] K=16 seed=1 iter=4 val_regret=2.4740 value_err=0.2355
+[11:09:05] [F2016 full 23d4e9] K=16 seed=2 iter=3 val_regret=1.7820 value_err=0.1167
+[11:09:55] [F2016 full 4165b4] K=16 seed=1 iter=5 val_regret=2.1632 value_err=0.1767
+[11:11:03] [F2016 full 23d4e9] K=16 seed=2 iter=4 val_regret=1.1168 value_err=0.1211
+[11:11:24] [F2016 full 4165b4] K=16 seed=1 iter=6 val_regret=4.5631 value_err=0.2529
+[11:13:20] [F2016 full 23d4e9] K=16 seed=2 iter=5 val_regret=1.4219 value_err=0.1035
+[11:14:22] [F2015 full 111f85] K=16 seed=0 iter=1 val_regret=1.2060 value_err=0.0739
+[11:15:27] [F2016 full 23d4e9] K=16 seed=2 iter=6 val_regret=1.4395 value_err=0.1424
+[11:16:04] [F2015 full 111f85] K=16 seed=0 iter=2 val_regret=1.0092 value_err=0.0964
+[11:17:27] [F2015 full 111f85] K=16 seed=0 iter=3 val_regret=0.6913 value_err=0.0829
+[11:18:15] [F2015 full 79e5ca] K=16 seed=1 iter=1 val_regret=0.8113 value_err=0.0703
+[11:18:59] [F2015 full 111f85] K=16 seed=0 iter=4 val_regret=1.1435 value_err=0.0878
+[11:19:37] [F2015 full 79e5ca] K=16 seed=1 iter=2 val_regret=0.2551 value_err=0.1377
+[11:20:58] [F2015 full 111f85] K=16 seed=0 iter=5 val_regret=1.0883 value_err=0.1324
+[11:21:13] [F2015 full 79e5ca] K=16 seed=1 iter=3 val_regret=0.4073 value_err=0.1304
+[11:22:47] [F2015 full 111f85] K=16 seed=0 iter=6 val_regret=0.3765 value_err=0.1223
+[11:23:21] [F2015 full 79e5ca] K=16 seed=1 iter=4 val_regret=139.0521 value_err=0.1355
+[11:25:05] [F2015 full 79e5ca] K=16 seed=1 iter=5 val_regret=2.7560 value_err=0.2293
+[11:25:30] [F2015 full 5d2be6] K=16 seed=2 iter=1 val_regret=0.5058 value_err=0.0910
+[11:26:51] [F2015 full 79e5ca] K=16 seed=1 iter=6 val_regret=3.5968 value_err=0.2069
+[11:27:15] [F2015 full 5d2be6] K=16 seed=2 iter=2 val_regret=3.4323 value_err=0.0970
+[11:28:22] [F2017 full 185c79] K=8 seed=0 iter=1 val_regret=0.1693 value_err=0.0627
+[11:28:53] [F2015 full 5d2be6] K=16 seed=2 iter=3 val_regret=2.7316 value_err=0.1244
+[11:29:20] [F2017 full 185c79] K=8 seed=0 iter=2 val_regret=2.3530 value_err=0.1183
+[11:30:15] [F2017 full 185c79] K=8 seed=0 iter=3 val_regret=2.2803 value_err=0.1064
+[11:30:52] [F2015 full 5d2be6] K=16 seed=2 iter=4 val_regret=2.0227 value_err=0.0981
+[11:31:11] [F2017 full 185c79] K=8 seed=0 iter=4 val_regret=1.5577 value_err=0.1344
+[11:32:01] [F2017 full 185c79] K=8 seed=0 iter=5 val_regret=70.0382 value_err=0.1107
+[11:32:52] [F2015 full 5d2be6] K=16 seed=2 iter=5 val_regret=2.7696 value_err=0.1086
+[11:32:59] [F2017 full 185c79] K=8 seed=0 iter=6 val_regret=1.7854 value_err=0.1580
+[11:34:26] [F2017 full a480ec] K=8 seed=1 iter=1 val_regret=1.3279 value_err=0.0811
+[11:35:10] [F2015 full 5d2be6] K=16 seed=2 iter=6 val_regret=2.3621 value_err=0.1060
+[11:35:13] [F2017 full a480ec] K=8 seed=1 iter=2 val_regret=1.3667 value_err=0.1053
+[11:36:01] [F2017 full a480ec] K=8 seed=1 iter=3 val_regret=219.1467 value_err=0.1128
+[11:36:31] [F2017 full 5d940a] K=8 seed=2 iter=1 val_regret=256.0318 value_err=0.0933
+[11:36:50] [F2017 full a480ec] K=8 seed=1 iter=4 val_regret=2.0033 value_err=0.1884
+[11:37:10] [F2017 full 5d940a] K=8 seed=2 iter=2 val_regret=1.0647 value_err=0.0863
+[11:37:44] [F2017 full a480ec] K=8 seed=1 iter=5 val_regret=1.5134 value_err=0.1335
+[11:37:51] [F2017 full 5d940a] K=8 seed=2 iter=3 val_regret=1.6765 value_err=0.0869
+[11:38:39] [F2017 full 5d940a] K=8 seed=2 iter=4 val_regret=118.0607 value_err=0.1051
+[11:38:43] [F2017 full a480ec] K=8 seed=1 iter=6 val_regret=2.0577 value_err=0.1748
+[11:39:27] [F2017 full 5d940a] K=8 seed=2 iter=5 val_regret=298.8907 value_err=0.1097
+[11:40:04] [F2016 full 4ce203] K=8 seed=0 iter=1 val_regret=1.6405 value_err=0.0643
+[11:40:21] [F2017 full 5d940a] K=8 seed=2 iter=6 val_regret=2.4261 value_err=0.1707
+[11:41:01] [F2016 full 4ce203] K=8 seed=0 iter=2 val_regret=0.5315 value_err=0.0836
+[11:41:44] [F2016 full 178f11] K=8 seed=1 iter=1 val_regret=2.1539 value_err=0.1017
+[11:41:50] [F2016 full 4ce203] K=8 seed=0 iter=3 val_regret=0.8949 value_err=0.0813
+[11:42:37] [F2016 full 178f11] K=8 seed=1 iter=2 val_regret=2.6036 value_err=0.1203
+[11:42:53] [F2016 full 4ce203] K=8 seed=0 iter=4 val_regret=1.1167 value_err=0.0951
+[11:43:21] [F2016 full 178f11] K=8 seed=1 iter=3 val_regret=0.7366 value_err=0.1294
+[11:43:52] [F2016 full 4ce203] K=8 seed=0 iter=5 val_regret=0.7031 value_err=0.1487
+[11:44:07] [F2016 full 178f11] K=8 seed=1 iter=4 val_regret=0.9949 value_err=0.1107
+[11:44:56] [F2016 full 4ce203] K=8 seed=0 iter=6 val_regret=1.3550 value_err=0.1699
+[11:45:01] [F2016 full 178f11] K=8 seed=1 iter=5 val_regret=0.5280 value_err=0.1136
+[11:45:56] [F2016 full 178f11] K=8 seed=1 iter=6 val_regret=0.8709 value_err=0.1198
+[11:46:23] [F2016 full 8a558f] K=8 seed=2 iter=1 val_regret=1.5375 value_err=0.1083
+[11:47:14] [F2016 full 8a558f] K=8 seed=2 iter=2 val_regret=1.9512 value_err=0.0908
+[11:47:24] [F2015 full 07a3e3] K=8 seed=0 iter=1 val_regret=15.9950 value_err=0.1297
+[11:48:00] [F2016 full 8a558f] K=8 seed=2 iter=3 val_regret=1.8265 value_err=0.1255
+[11:48:13] [F2015 full 07a3e3] K=8 seed=0 iter=2 val_regret=0.5493 value_err=0.1552
+[11:48:54] [F2016 full 8a558f] K=8 seed=2 iter=4 val_regret=0.9793 value_err=0.1056
+[11:49:08] [F2015 full 07a3e3] K=8 seed=0 iter=3 val_regret=2.1403 value_err=0.1339
+[11:49:37] [F2016 full 8a558f] K=8 seed=2 iter=5 val_regret=1.1390 value_err=0.1143
+[11:49:54] [F2015 full 07a3e3] K=8 seed=0 iter=4 val_regret=4.8342 value_err=0.1167
+[11:50:23] [F2016 full 8a558f] K=8 seed=2 iter=6 val_regret=1.7539 value_err=0.1248
+[11:50:33] [F2015 full 07a3e3] K=8 seed=0 iter=5 val_regret=1.9682 value_err=0.1091
+[11:51:23] [F2015 full 07a3e3] K=8 seed=0 iter=6 val_regret=1.8857 value_err=0.1087
+[11:51:48] [F2015 full 3ba870] K=8 seed=1 iter=1 val_regret=0.9297 value_err=0.0635
+[11:52:39] [F2015 full 3ba870] K=8 seed=1 iter=2 val_regret=1.5632 value_err=0.0808
+[11:52:47] [F2015 full 798e1e] K=8 seed=2 iter=1 val_regret=0.9054 value_err=0.1332
+[11:53:29] [F2015 full 3ba870] K=8 seed=1 iter=3 val_regret=2.7192 value_err=0.1435
+[11:53:35] [F2015 full 798e1e] K=8 seed=2 iter=2 val_regret=0.8451 value_err=0.0995
+[11:54:23] [F2015 full 3ba870] K=8 seed=1 iter=4 val_regret=1.4464 value_err=0.1391
+[11:54:25] [F2015 full 798e1e] K=8 seed=2 iter=3 val_regret=2.0487 value_err=0.1157
+[11:55:10] [F2015 full 798e1e] K=8 seed=2 iter=4 val_regret=57.5056 value_err=0.1023
+[11:55:15] [F2015 full 3ba870] K=8 seed=1 iter=5 val_regret=2.1622 value_err=0.1225
+[11:56:02] [F2015 full 798e1e] K=8 seed=2 iter=5 val_regret=0.7321 value_err=0.1246
+[11:56:19] [F2015 full 3ba870] K=8 seed=1 iter=6 val_regret=240.2833 value_err=0.1525
+[11:56:54] [F2015 full 798e1e] K=8 seed=2 iter=6 val_regret=1.7782 value_err=0.1293
+[11:57:10] [F2017 full 3c3dd5] K=4 seed=0 iter=1 val_regret=1.2876 value_err=0.0488
+[11:57:35] [F2017 full 3c3dd5] K=4 seed=0 iter=2 val_regret=63.7029 value_err=0.1435
+[11:57:44] [F2017 full f165d1] K=4 seed=1 iter=1 val_regret=1.0062 value_err=0.0733
+[11:57:57] [F2017 full 3c3dd5] K=4 seed=0 iter=3 val_regret=2.2932 value_err=0.1136
+[11:58:05] [F2017 full f165d1] K=4 seed=1 iter=2 val_regret=1.6970 value_err=0.0867
+[11:58:21] [F2017 full 3c3dd5] K=4 seed=0 iter=4 val_regret=2.8510 value_err=0.1097
+[11:58:31] [F2017 full f165d1] K=4 seed=1 iter=3 val_regret=2.2423 value_err=0.1270
+[11:58:42] [F2017 full 3c3dd5] K=4 seed=0 iter=5 val_regret=2.9898 value_err=0.1191
+[11:58:53] [F2017 full f165d1] K=4 seed=1 iter=4 val_regret=2.8545 value_err=0.1024
+[11:59:02] [F2017 full 3c3dd5] K=4 seed=0 iter=6 val_regret=2.3964 value_err=0.1297
+[11:59:18] [F2017 full f165d1] K=4 seed=1 iter=5 val_regret=2.6625 value_err=0.1072
+[11:59:41] [F2017 full f165d1] K=4 seed=1 iter=6 val_regret=2.7077 value_err=0.1297
+[11:59:53] [F2017 full 1d83d9] K=4 seed=2 iter=1 val_regret=1.2893 value_err=0.0811
+[12:00:16] [F2017 full 1d83d9] K=4 seed=2 iter=2 val_regret=1.1293 value_err=0.0953
+[12:00:38] [F2016 full 0cd71e] K=4 seed=0 iter=1 val_regret=1.7564 value_err=0.0769
+[12:00:39] [F2017 full 1d83d9] K=4 seed=2 iter=3 val_regret=1.5109 value_err=0.1377
+[12:01:01] [F2017 full 1d83d9] K=4 seed=2 iter=4 val_regret=2.2519 value_err=0.1165
+[12:01:08] [F2016 full 0cd71e] K=4 seed=0 iter=2 val_regret=2.1113 value_err=0.1625
+[12:01:25] [F2017 full 1d83d9] K=4 seed=2 iter=5 val_regret=1.7438 value_err=0.1334
+[12:01:38] [F2016 full 0cd71e] K=4 seed=0 iter=3 val_regret=16.0265 value_err=0.1190
+[12:01:46] [F2017 full 1d83d9] K=4 seed=2 iter=6 val_regret=2.3739 value_err=0.1362
+[12:02:06] [F2016 full 0cd71e] K=4 seed=0 iter=4 val_regret=1.8271 value_err=0.1044
+[12:02:34] [F2016 full 0cd71e] K=4 seed=0 iter=5 val_regret=2.1445 value_err=0.1221
+[12:02:45] [F2016 full 7e5a31] K=4 seed=1 iter=1 val_regret=1.0397 value_err=0.0672
+[12:02:57] [F2016 full 0cd71e] K=4 seed=0 iter=6 val_regret=2.5331 value_err=0.1119
+[12:03:14] [F2016 full 7e5a31] K=4 seed=1 iter=2 val_regret=1.5175 value_err=0.0779
+[12:03:42] [F2016 full 7e5a31] K=4 seed=1 iter=3 val_regret=1.2403 value_err=0.0944
+[12:03:52] [F2016 full 76b790] K=4 seed=2 iter=1 val_regret=1.7276 value_err=0.0608
+[12:04:10] [F2016 full 7e5a31] K=4 seed=1 iter=4 val_regret=1.3893 value_err=0.0884
+[12:04:20] [F2016 full 76b790] K=4 seed=2 iter=2 val_regret=14.0379 value_err=0.0791
+[12:04:34] [F2016 full 7e5a31] K=4 seed=1 iter=5 val_regret=1.9224 value_err=0.0774
+[12:04:48] [F2016 full 76b790] K=4 seed=2 iter=3 val_regret=8.1406 value_err=0.0849
+[12:04:59] [F2016 full 7e5a31] K=4 seed=1 iter=6 val_regret=31.1768 value_err=0.1057
+[12:05:15] [F2016 full 76b790] K=4 seed=2 iter=4 val_regret=0.9670 value_err=0.0644
+[12:05:40] [F2016 full 76b790] K=4 seed=2 iter=5 val_regret=0.6991 value_err=0.0696
+[12:05:55] [F2015 full 51cadd] K=4 seed=0 iter=1 val_regret=0.4780 value_err=0.0570
+[12:06:07] [F2016 full 76b790] K=4 seed=2 iter=6 val_regret=1.7096 value_err=0.0787
+[12:06:27] [F2015 full 51cadd] K=4 seed=0 iter=2 val_regret=3.4303 value_err=0.0912
+[12:06:55] [F2015 full 51cadd] K=4 seed=0 iter=3 val_regret=0.9446 value_err=0.0646
+[12:07:06] [F2015 full 88a909] K=4 seed=1 iter=1 val_regret=0.6005 value_err=0.0473
+[12:07:23] [F2015 full 51cadd] K=4 seed=0 iter=4 val_regret=1.1745 value_err=0.0696
+[12:07:33] [F2015 full 88a909] K=4 seed=1 iter=2 val_regret=0.8073 value_err=0.0517
+[12:07:52] [F2015 full 51cadd] K=4 seed=0 iter=5 val_regret=1.4881 value_err=0.0772
+[12:07:59] [F2015 full 88a909] K=4 seed=1 iter=3 val_regret=12.8918 value_err=0.0773
+[12:08:27] [F2015 full 51cadd] K=4 seed=0 iter=6 val_regret=2.9397 value_err=0.1717
+[12:08:30] [F2015 full 88a909] K=4 seed=1 iter=4 val_regret=2.2675 value_err=0.0986
+[12:09:00] [F2015 full 88a909] K=4 seed=1 iter=5 val_regret=2.1649 value_err=0.1951
+[12:09:25] [F2015 full 63f7a7] K=4 seed=2 iter=1 val_regret=10.5847 value_err=0.0827
+[12:09:29] [F2015 full 88a909] K=4 seed=1 iter=6 val_regret=136.7687 value_err=0.1694
+[12:09:55] [F2015 full 63f7a7] K=4 seed=2 iter=2 val_regret=1.7916 value_err=0.0743
+[12:10:24] [F2015 full 63f7a7] K=4 seed=2 iter=3 val_regret=3.6067 value_err=0.1491
+[12:10:52] [F2015 full 63f7a7] K=4 seed=2 iter=4 val_regret=0.2464 value_err=0.1067
+[12:11:20] [F2015 full 63f7a7] K=4 seed=2 iter=5 val_regret=14.8324 value_err=0.1101
+[12:11:44] [F2015 full 63f7a7] K=4 seed=2 iter=6 val_regret=13.3814 value_err=0.1216
+[12:11:46] trained 36 VITA models (('full',))
+[12:11:46] stage train finished in 5739s
+[12:15:10] baselines evaluated: 288
+[12:15:10] stage baselines finished in 201s
+[12:17:39] VITA evaluations: 108
+[12:17:39] stage evaluate finished in 148s
+[12:19:03] [F2018 A3 b2ce2f] K=8 seed=0 iter=1 val_regret=0.2035 value_err=0.0627
+[12:19:04] [F2017 A3 bdb57b] K=8 seed=0 iter=1 val_regret=0.1693 value_err=0.0627
+[12:19:49] [F2018 A3 b2ce2f] K=8 seed=0 iter=2 val_regret=3.1535 value_err=0.0809
+[12:19:51] [F2017 A3 bdb57b] K=8 seed=0 iter=2 val_regret=1.1456 value_err=0.0809
+[12:20:38] [F2018 A3 b2ce2f] K=8 seed=0 iter=3 val_regret=2.2851 value_err=0.1143
+[12:20:39] [F2017 A3 bdb57b] K=8 seed=0 iter=3 val_regret=1.1467 value_err=0.1143
+[12:21:36] [F2018 A3 b2ce2f] K=8 seed=0 iter=4 val_regret=2.6362 value_err=0.1155
+[12:21:37] [F2017 A3 bdb57b] K=8 seed=0 iter=4 val_regret=1.1473 value_err=0.1155
+[12:22:29] [F2018 A3 b2ce2f] K=8 seed=0 iter=5 val_regret=2.9619 value_err=0.1227
+[12:22:30] [F2017 A3 bdb57b] K=8 seed=0 iter=5 val_regret=1.3435 value_err=0.1227
+[12:23:22] [F2018 A3 b2ce2f] K=8 seed=0 iter=6 val_regret=102.6005 value_err=0.1209
+[12:23:26] [F2017 A3 bdb57b] K=8 seed=0 iter=6 val_regret=79.1588 value_err=0.1209
+[12:24:36] [F2016 A3 b48ba5] K=8 seed=0 iter=1 val_regret=1.6405 value_err=0.0643
+[12:24:49] [F2015 A3 ca8c82] K=8 seed=0 iter=1 val_regret=15.9950 value_err=0.1297
+[12:25:25] [F2016 A3 b48ba5] K=8 seed=0 iter=2 val_regret=10.0172 value_err=0.1088
+[12:25:34] [F2015 A3 ca8c82] K=8 seed=0 iter=2 val_regret=4.2612 value_err=0.1282
+[12:26:06] [F2016 A3 b48ba5] K=8 seed=0 iter=3 val_regret=156.5165 value_err=0.1390
+[12:26:23] [F2015 A3 ca8c82] K=8 seed=0 iter=3 val_regret=1.4961 value_err=0.1622
+[12:26:52] [F2016 A3 b48ba5] K=8 seed=0 iter=4 val_regret=268.1704 value_err=0.1550
+[12:27:10] [F2015 A3 ca8c82] K=8 seed=0 iter=4 val_regret=0.9669 value_err=0.0936
+[12:27:43] [F2016 A3 b48ba5] K=8 seed=0 iter=5 val_regret=19.0183 value_err=0.0980
+[12:28:01] [F2015 A3 ca8c82] K=8 seed=0 iter=5 val_regret=2.6603 value_err=0.1354
+[12:28:31] [F2016 A3 b48ba5] K=8 seed=0 iter=6 val_regret=40.1994 value_err=0.1165
+[12:28:57] [F2015 A3 ca8c82] K=8 seed=0 iter=6 val_regret=0.4767 value_err=0.0991
+[12:29:29] [F2018 A4 c74a57] K=8 seed=0 iter=1 val_regret=0.7185 value_err=0.0282
+[12:29:48] [F2017 A4 540e71] K=8 seed=0 iter=1 val_regret=0.7666 value_err=0.0282
+[12:30:06] [F2018 A4 c74a57] K=8 seed=0 iter=2 val_regret=0.6129 value_err=0.0319
+[12:30:19] [F2017 A4 540e71] K=8 seed=0 iter=2 val_regret=0.5124 value_err=0.0319
+[12:30:38] [F2018 A4 c74a57] K=8 seed=0 iter=3 val_regret=1.6894 value_err=0.0388
+[12:30:45] [F2017 A4 540e71] K=8 seed=0 iter=3 val_regret=0.4010 value_err=0.0388
+[12:31:12] [F2018 A4 c74a57] K=8 seed=0 iter=4 val_regret=2.1540 value_err=0.0515
+[12:31:15] [F2017 A4 540e71] K=8 seed=0 iter=4 val_regret=1.1040 value_err=0.0515
+[12:31:45] [F2018 A4 c74a57] K=8 seed=0 iter=5 val_regret=2.2811 value_err=0.0656
+[12:31:45] [F2017 A4 540e71] K=8 seed=0 iter=5 val_regret=1.3405 value_err=0.0656
+[12:32:17] [F2017 A4 540e71] K=8 seed=0 iter=6 val_regret=1.1270 value_err=0.0757
+[12:32:17] [F2018 A4 c74a57] K=8 seed=0 iter=6 val_regret=2.5002 value_err=0.0757
+[12:33:11] [F2016 A4 6bf623] K=8 seed=0 iter=1 val_regret=0.3013 value_err=0.0311
+[12:33:14] [F2015 A4 50e05e] K=8 seed=0 iter=1 val_regret=0.7709 value_err=0.0285
+[12:33:48] [F2016 A4 6bf623] K=8 seed=0 iter=2 val_regret=0.4208 value_err=0.0363
+[12:33:49] [F2015 A4 50e05e] K=8 seed=0 iter=2 val_regret=0.2009 value_err=0.0348
+[12:34:22] [F2016 A4 6bf623] K=8 seed=0 iter=3 val_regret=0.3031 value_err=0.0436
+[12:34:24] [F2015 A4 50e05e] K=8 seed=0 iter=3 val_regret=0.2080 value_err=0.0413
+[12:35:00] [F2015 A4 50e05e] K=8 seed=0 iter=4 val_regret=0.3235 value_err=0.0423
+[12:35:03] [F2016 A4 6bf623] K=8 seed=0 iter=4 val_regret=0.4525 value_err=0.0488
+[12:35:39] [F2015 A4 50e05e] K=8 seed=0 iter=5 val_regret=0.4640 value_err=0.0560
+[12:35:42] [F2016 A4 6bf623] K=8 seed=0 iter=5 val_regret=0.5736 value_err=0.0577
+[12:36:14] [F2016 A4 6bf623] K=8 seed=0 iter=6 val_regret=1.1612 value_err=0.0657
+[12:36:15] [F2015 A4 50e05e] K=8 seed=0 iter=6 val_regret=0.8960 value_err=0.0349
+[12:36:56] [F2018 A2 baa921] K=8 seed=0 iter=1 val_regret=0.8567 value_err=0.0215
+[12:36:56] [F2017 A2 99adfc] K=8 seed=0 iter=1 val_regret=1.3518 value_err=0.0215
+[12:37:13] [F2017 A2 99adfc] K=8 seed=0 iter=2 val_regret=0.7061 value_err=0.0196
+[12:37:15] [F2018 A2 baa921] K=8 seed=0 iter=2 val_regret=0.5657 value_err=0.0196
+[12:37:31] [F2017 A2 99adfc] K=8 seed=0 iter=3 val_regret=0.8101 value_err=0.0215
+[12:37:33] [F2018 A2 baa921] K=8 seed=0 iter=3 val_regret=0.6006 value_err=0.0215
+[12:37:50] [F2017 A2 99adfc] K=8 seed=0 iter=4 val_regret=1.0000 value_err=0.0207
+[12:37:50] [F2018 A2 baa921] K=8 seed=0 iter=4 val_regret=0.5671 value_err=0.0207
+[12:38:07] [F2017 A2 99adfc] K=8 seed=0 iter=5 val_regret=0.9185 value_err=0.0227
+[12:38:08] [F2018 A2 baa921] K=8 seed=0 iter=5 val_regret=0.4505 value_err=0.0227
+[12:38:25] [F2017 A2 99adfc] K=8 seed=0 iter=6 val_regret=1.7348 value_err=0.0224
+[12:38:26] [F2018 A2 baa921] K=8 seed=0 iter=6 val_regret=1.1519 value_err=0.0224
+[12:39:06] [F2015 A2 6a4352] K=8 seed=0 iter=1 val_regret=0.7114 value_err=0.0215
+[12:39:07] [F2016 A2 998ae4] K=8 seed=0 iter=1 val_regret=0.6066 value_err=0.0201
+[12:39:22] [F2015 A2 6a4352] K=8 seed=0 iter=2 val_regret=0.8361 value_err=0.0194
+[12:39:24] [F2016 A2 998ae4] K=8 seed=0 iter=2 val_regret=0.6864 value_err=0.0183
+[12:39:34] [F2016 A2 998ae4] K=8 seed=0 iter=3 val_regret=0.9164 value_err=0.0219
+[12:39:36] [F2015 A2 6a4352] K=8 seed=0 iter=3 val_regret=1.0729 value_err=0.0198
+[12:39:43] [F2016 A2 998ae4] K=8 seed=0 iter=4 val_regret=0.9611 value_err=0.0214
+[12:39:51] [F2015 A2 6a4352] K=8 seed=0 iter=4 val_regret=0.9424 value_err=0.0210
+[12:39:54] [F2016 A2 998ae4] K=8 seed=0 iter=5 val_regret=0.8930 value_err=0.0235
+[12:40:02] [F2016 A2 998ae4] K=8 seed=0 iter=6 val_regret=0.9753 value_err=0.0272
+[12:40:08] [F2015 A2 6a4352] K=8 seed=0 iter=5 val_regret=0.6092 value_err=0.0230
+[12:40:25] [F2015 A2 6a4352] K=8 seed=0 iter=6 val_regret=0.4251 value_err=0.0236
+[12:40:27] [F2018 A1 9e5917] K=8 seed=0 iter=1 val_regret=0.3593 value_err=nan
+[12:40:36] [F2018 A1 9e5917] K=8 seed=0 iter=2 val_regret=0.3256 value_err=nan
+[12:40:44] [F2018 A1 9e5917] K=8 seed=0 iter=3 val_regret=0.2913 value_err=nan
+[12:40:50] [F2017 A1 64c3ef] K=8 seed=0 iter=1 val_regret=0.5299 value_err=nan
+[12:40:52] [F2018 A1 9e5917] K=8 seed=0 iter=4 val_regret=0.2779 value_err=nan
+[12:40:56] [F2017 A1 64c3ef] K=8 seed=0 iter=2 val_regret=0.9816 value_err=nan
+[12:41:00] [F2018 A1 9e5917] K=8 seed=0 iter=5 val_regret=0.2718 value_err=nan
+[12:41:02] [F2017 A1 64c3ef] K=8 seed=0 iter=3 val_regret=0.9480 value_err=nan
+[12:41:08] [F2017 A1 64c3ef] K=8 seed=0 iter=4 val_regret=0.9619 value_err=nan
+[12:41:08] [F2018 A1 9e5917] K=8 seed=0 iter=6 val_regret=0.2546 value_err=nan
+[12:41:14] [F2017 A1 64c3ef] K=8 seed=0 iter=5 val_regret=0.9619 value_err=nan
+[12:41:20] [F2017 A1 64c3ef] K=8 seed=0 iter=6 val_regret=0.9488 value_err=nan
+[12:41:33] [F2016 A1 83dee1] K=8 seed=0 iter=1 val_regret=0.5981 value_err=nan
+[12:41:40] [F2016 A1 83dee1] K=8 seed=0 iter=2 val_regret=0.6837 value_err=nan
+[12:41:45] [F2016 A1 83dee1] K=8 seed=0 iter=3 val_regret=0.6412 value_err=nan
+[12:41:46] [F2015 A1 f57e0f] K=8 seed=0 iter=1 val_regret=0.2649 value_err=nan
+[12:41:52] [F2016 A1 83dee1] K=8 seed=0 iter=4 val_regret=0.5631 value_err=nan
+[12:41:52] [F2015 A1 f57e0f] K=8 seed=0 iter=2 val_regret=0.2872 value_err=nan
+[12:41:58] [F2016 A1 83dee1] K=8 seed=0 iter=5 val_regret=0.5116 value_err=nan
+[12:41:58] [F2015 A1 f57e0f] K=8 seed=0 iter=3 val_regret=0.2801 value_err=nan
+[12:42:02] [F2015 A1 f57e0f] K=8 seed=0 iter=4 val_regret=0.2801 value_err=nan
+[12:42:04] [F2016 A1 83dee1] K=8 seed=0 iter=6 val_regret=0.5024 value_err=nan
+[12:42:08] [F2015 A1 f57e0f] K=8 seed=0 iter=5 val_regret=0.2752 value_err=nan
+[12:42:14] [F2015 A1 f57e0f] K=8 seed=0 iter=6 val_regret=0.2670 value_err=nan
+[12:42:47] ablations done (16 trainings)
+[12:42:47] stage ablations finished in 1507s
+[12:56:03] [F2018 full 34c8f2] K=4 seed=0 iter=1 val_regret=2.6247 value_err=0.0488
+[12:56:26] [F2018 full 34c8f2] K=4 seed=0 iter=2 val_regret=141.1884 value_err=0.1435
+[12:56:46] [F2018 full 34c8f2] K=4 seed=0 iter=3 val_regret=3.0168 value_err=0.1136
+[12:57:09] [F2018 full 34c8f2] K=4 seed=0 iter=4 val_regret=3.2239 value_err=0.1097
+[12:57:28] [F2018 full 34c8f2] K=4 seed=0 iter=5 val_regret=3.2318 value_err=0.1191
+[12:57:46] [F2018 full 34c8f2] K=4 seed=0 iter=6 val_regret=2.1487 value_err=0.1297

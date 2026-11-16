@@ -1,0 +1,64 @@
+\begin{figure}[!t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  src/.style={draw, rounded corners=2pt, align=center, minimum height=6mm, minimum width=11mm, inner sep=1.5pt, fill=white},
+  conv/.style={draw, rounded corners=2pt, align=center, minimum height=6.5mm, minimum width=13mm, inner sep=1.5pt, fill=cTint},
+  sto/.style={draw, rounded corners=2pt, align=center, minimum height=6mm, minimum width=12mm, inner sep=1.5pt, fill=white, dashed},
+  dem/.style={draw, align=center, minimum height=5.5mm, minimum width=9mm, inner sep=1.5pt, fill=white},
+  bus/.style={line width=2.2pt},
+  arr/.style={-{Stealth[length=1.6mm]}, line width=0.5pt},
+  barr/.style={{Stealth[length=1.6mm]}-{Stealth[length=1.6mm]}, line width=0.5pt}]
+% electricity bus
+\draw[bus] (0.00,3.6) -- (7.80,3.6) node[pos=0, above right=0.5pt, font=\scriptsize\bfseries]{};
+\node[anchor=south west, font=\footnotesize] at (-0.05,3.62) {Electricity};
+\node[src] (grid) at (2.21,4.75) {Grid};
+\node[src] (pv) at (3.52,4.75) {PV};
+\node[src] (wd) at (4.84,4.75) {Wind};
+\node[sto] (bat) at (6.16,4.75) {Battery};
+\node[dem] (del) at (7.38,4.75) {$D^{\mathrm{el}}$};
+\draw[barr] (grid) -- (grid|-0,3.6);
+\draw[arr] (pv) -- (pv|-0,3.6);
+\draw[arr] (wd) -- (wd|-0,3.6);
+\draw[barr] (bat) -- (bat|-0,3.6);
+\draw[arr] (del|-0,3.6) -- (del);
+% converters
+\node[conv] (hpl) at (0.75,2.45) {LT heat\\ pump};
+\node[conv] (ely) at (2.58,2.45) {Electrolyzer};
+\node[conv] (hph) at (4.46,2.45) {HT heat\\ pump};
+\node[conv] (eb) at (5.97,2.45) {Electric\\ boiler};
+\draw[arr] (hpl|-0,3.6) -- (hpl);
+\draw[arr] (ely|-0,3.6) -- (ely);
+\draw[arr] (hph|-0,3.6) -- (hph);
+\draw[arr] (eb|-0,3.6) -- (eb);
+% heat and hydrogen buses
+\draw[bus] (0,1.3) -- (2.2,1.3);
+\node[anchor=north west, font=\footnotesize, inner sep=1pt] at (-0.02,1.22) {LT heat};
+\draw[bus] (2.55,1.3) -- (3.9,1.3);
+\node[anchor=north west, font=\footnotesize, inner sep=1pt] at (2.53,1.22) {H$_2$};
+\draw[bus] (4.15,1.3) -- (7.8,1.3);
+\node[anchor=north west, font=\footnotesize, inner sep=1pt] at (4.13,1.22) {HT heat (steam)};
+\draw[arr] (hpl) -- (hpl|-0,1.3);
+\draw[arr] (ely.south) ++(0.3,0) -- ++(0,-0.83);
+\draw[arr] (ely.south west) ++(0.14,0) -- (1.55,1.3);
+\draw[arr] (hph) -- (hph|-0,1.3);
+\draw[arr] (eb) -- (eb|-0,1.3);
+\node[conv] (gb) at (7.36,2.45) {Gas\\ boiler};
+\node[src] (gas) at (7.42,0.22) {Gas};
+\draw[arr] (gb) -- (gb|-0,1.3);
+\draw[arr] (gas.east) -- ++(0.25,0) |- (gb.east);
+% storages and demands
+\node[sto, minimum width=10mm] (tes) at (1.15,-0.58) {Thermal\\ tank};
+\node[dem, minimum width=8mm] (dl) at (2.12,-0.12) {$D^{\mathrm{L}}$};
+\node[sto, minimum width=9.5mm] (h2t) at (3.0,-0.58) {H$_2$ tank};
+\node[dem, minimum width=8mm] (dh2) at (3.88,-0.12) {$D^{\mathrm{h2}}$};
+\node[dem, minimum width=8mm] (dh) at (6.45,-0.12) {$D^{\mathrm{H}}$};
+\draw[barr] (tes) -- (tes|-0,1.3);
+\draw[arr] (dl|-0,1.3) -- (dl);
+\draw[barr] (h2t) -- (h2t|-0,1.3);
+\draw[arr] (dh2|-0,1.3) -- (dh2);
+\draw[arr] (dh|-0,1.3) -- (dh);
+\end{tikzpicture}
+\caption{The industrial hub couples electricity, low-temperature heat, high-temperature process heat and hydrogen through five converters and three storages. Shaded boxes are converters, dashed boxes are storages and plain boxes on the buses are demands; the electrolyzer feeds hydrogen and recovered heat.}
+\label{fig:hub}
+\end{figure}

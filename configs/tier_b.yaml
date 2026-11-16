@@ -1,0 +1,16 @@
+# Tier B overrides: ENTSO-E Transparency Platform data for Spain, 2015-2018, as distributed with Darts.
+tier: B
+data_file:
+  url: https://raw.githubusercontent.com/unit8co/darts/master/datasets/energy_dataset.csv
+  sha256: 6ccdba32b23e4ebb7fa4dc31b93848ea778e5c918007a5ebbb6fa2cc993886c5
+  rows: 35064
+data:
+  years: [2015, 2016, 2017, 2018]
+  cf_quantile: 0.999          # capacity factor proxy CF = gen / Q_y(0.999), clipped to [0, 1]
+splits:
+  dev: {train: [2015, 2016], val: 2017}
+  folds:                      # leave-one-year-out: validate on the latest remaining year
+    - {test: 2018, train: [2015, 2016], val: 2017}
+    - {test: 2017, train: [2015, 2016], val: 2018}
+    - {test: 2016, train: [2015, 2017], val: 2018}
+    - {test: 2015, train: [2016, 2017], val: 2018}

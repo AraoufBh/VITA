@@ -1,0 +1,36 @@
+\begin{figure}[!t]
+\centering
+\subfloat[]{\label{fig:soc}%
+\begin{tikzpicture}
+\begin{axis}[ieee, height=0.56\columnwidth,
+  xlabel={Day of year \FigFiveYear}, ylabel={State of charge [MWh]},
+  xmin=1, xmax=365, ymin=0, xtick={1,60,121,182,244,305,365},
+  legend columns=3, legend style={at={(0.5,1.03)}, anchor=south, /tikz/every even column/.append style={column sep=4pt}},
+  every axis plot/.append style={line width=0.45pt, mark=none}, legend image post style={line width=1.4pt}]
+\addplot+[m-FULL, mark=none, line width=0.5pt] table[x=day, y=full, col sep=comma]{data/fig5a_soc.csv};
+\addlegendentry{FULL}
+\addplot+[cVITA, mark=none, line width=0.6pt] table[x=day, y=vita, col sep=comma]{data/fig5a_soc.csv};
+\addlegendentry{VITA}
+\addplot+[\FigFourCapColor, mark=none, line width=0.45pt] table[x=day, y=base, col sep=comma]{data/fig5a_soc.csv};
+\addlegendentry{\CapDevBaseName}
+\end{axis}
+\end{tikzpicture}}
+
+\subfloat[]{\label{fig:weights}%
+\begin{tikzpicture}
+\begin{axis}[ieee, height=0.52\columnwidth,
+  ybar, bar width=4pt, xlabel={Representative day (sorted by PV plus wind capacity factor)},
+  ylabel={Weight [days]}, xtick={1,...,8}, ymin=0, enlarge x limits=0.08, xmajorgrids=false,
+  legend columns=2, legend style={at={(0.5,1.03)}, anchor=south, /tikz/every even column/.append style={column sep=4pt}},
+  nodes near coords style={font=\tiny, rotate=90, anchor=west, text=black}]
+\addplot+[draw=cVITA, fill=cVITA, nodes near coords={\pgfmathprintnumber[fixed, precision=2]{\pgfplotspointmeta}}, point meta=explicit]
+  table[x=rank, y=wvita, meta=cfvita, col sep=comma]{data/fig5b_weights.csv};
+\addlegendentry{VITA}
+\addplot+[draw=cKM, fill=cKM, nodes near coords={\pgfmathprintnumber[fixed, precision=2]{\pgfplotspointmeta}}, point meta=explicit]
+  table[x=rank, y=wkm, meta=cfkm, col sep=comma]{data/fig5b_weights.csv};
+\addlegendentry{KM}
+\end{axis}
+\end{tikzpicture}}
+\caption{Inter-period storage linking lets the aggregated models represent the weekly cycle of the thermal tank, which KM reproduces and VITA flattens. (a) State of charge at the start of each day of 2018 at 150\,EUR/t and $K=8$: full-resolution optimum and inter-day states of the aggregated design models of VITA (seed 0) and KM. (b) Weights of the eight representative days of VITA (seed 0) and KM, sorted by their mean PV plus wind capacity factor (bar labels).}
+\label{fig:storage}
+\end{figure}

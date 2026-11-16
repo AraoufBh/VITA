@@ -1,0 +1,27 @@
+\begin{table}[!t]
+\centering
+\caption{Techno-Economic Parameters (Technology-Data v0.13.0, Year 2030, EUR of 2020) and Case-Study Assumptions\label{tab:params}}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lccccl@{}}
+\toprule
+Technology & Capex & FOM & Life & $\kappa_i$ & Efficiency \\
+ & [kEUR/u] & [\%/a] & [a] & [kEUR/(u$\cdot$a)] & \\
+\midrule
+PV & 383.7 & 2.48 & 40 & 38.28 & n/a \\
+Wind & 1209.9 & 1.22 & 30 & 112.22 & n/a \\
+Battery energy & 151.0 & 0.00 & 25 & 12.96 & n/a \\
+Battery power & 170.1 & 0.34 & 10 & 24.80 & 0.96 \\
+Electrolyzer & 1500.0 & 4.00 & 25 & 188.72 & 0.622/0.223 \\
+H2 tank & 47.8 & 1.11 & 30 & 4.38 & n/a \\
+LT heat pump & 1000.4 & 0.23 & 25 & 88.18 & COP 3.20 \\
+HT heat pump & 959.9 & 0.09 & 20 & 91.50 & COP 3.05 \\
+Electric boiler & 71.9 & 1.46 & 25 & 7.22 & 0.99 \\
+Gas boiler & 46.7 & 4.18 & 25 & 5.96 & 0.93 \\
+Thermal tank & 3.0 & 1.00 & 40 & 0.26 & 1.00 \\
+\midrule
+\multicolumn{6}{@{}p{0.98\columnwidth}@{}}{\raggedright u: capacity unit (MW, or MWh for storage energy); electrolyzer efficiency: hydrogen/recovered heat. Variable costs [EUR/MWh]: wind 1.58, LT heat pump 2.93, HT heat pump 3.29, electric boiler 0.90, gas boiler 1.03. Gas 29.95 EUR/MWh$_{\mathrm{th}}$ with 0.198 t/MWh$_{\mathrm{th}}$; thermal tank energy-to-power ratio 60.34 h (technology-data).} \\
+\multicolumn{6}{@{}p{0.98\columnwidth}@{}}{\raggedright Assumptions: discount rate 7\,\%; inflation 2\,\%/a; grid limit 40 MW; import adder 30 and export discount 2 EUR/MWh; unserved energy 3000 EUR/MWh; PV and wind potential 150 MW each; thermal tank time constant 180 d; H$_2$ demand 8 MW; CO$_2$ price 80, 150 (central) and 250 EUR/t.} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+\begin{figure}[!t]
+\centering
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=1 by 2, vertical sep=4mm, xlabels at=edge bottom, xticklabels at=edge bottom},
+  ieee, height=0.40\columnwidth, xmin=0, xmax=6, xtick={0,...,6}, xlabel={Outer iteration $r$}]
+\nextgroupplot[ylabel={Val. regret [\%]}, ymode=log, log ticks with fixed point, ytick={0.1,0.3,1,3,10,30,100,300}, ymin=0.1, ymax=500]
+\addplot[name path=hi, draw=none, forget plot] table[x=iter, y=regmax, col sep=comma]{data/fig6_training.csv};
+\addplot[name path=lo, draw=none, forget plot] table[x=iter, y=regmin, col sep=comma]{data/fig6_training.csv};
+\addplot[cVITA, fill=cVITA, fill opacity=0.15, forget plot] fill between[of=hi and lo];
+\addplot+[m-VITA] table[x=iter, y=reg, col sep=comma]{data/fig6_training.csv};
+\nextgroupplot[ylabel={Value error [\%]}, ymin=0, xmin=0]
+\addplot[name path=hi2, draw=none, forget plot] table[x=iter, y=errmax, col sep=comma]{data/fig6_training.csv};
+\addplot[name path=lo2, draw=none, forget plot] table[x=iter, y=errmin, col sep=comma]{data/fig6_training.csv};
+\addplot[cVITA, fill=cVITA, fill opacity=0.15, forget plot] fill between[of=hi2 and lo2];
+\addplot+[m-VITA] table[x=iter, y=err, col sep=comma]{data/fig6_training.csv};
+\end{groupplot}
+\end{tikzpicture}
+\caption{Value-informed training did not reduce the validation regret or the minibatch value-matching error on the development fold. Mean over three seeds (line) and range (band) per outer iteration at $K=8$; iteration 0 is the reconstruction-pretrained initialization; logarithmic axis in the upper panel.}
+\label{fig:training}
+\end{figure}

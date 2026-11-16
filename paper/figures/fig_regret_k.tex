@@ -1,0 +1,25 @@
+\begin{figure}[!t]
+\centering
+\input{generated/fig3_series}
+\begin{tikzpicture}
+\begin{axis}[ieee, height=0.62\columnwidth,
+  xlabel={Representative days $K$}, ylabel={Test regret [\%]},
+  xtick={4,8,16}, xmin=3, xmax=17,
+  ymode=log, log ticks with fixed point, ytick={0.1,0.2,0.5,1,2,5,10,20,50,100}, ymin=\FigThreeYmin, ymax=\FigThreeYmax,
+  legend columns=3, legend style={at={(0.5,1.03)}, anchor=south, /tikz/every even column/.append style={column sep=4pt}},
+  error bars/y dir=plus, error bars/y explicit]
+\addplot+[m-VITA, error bars/.cd, error bar style={cVITA, line width=0.5pt}] table[x=K, y=meanVITA, y error=sdVITA, col sep=comma]{data/fig3_regret_vs_k.csv};
+\addlegendentry{VITA}
+\addplot+[\FigThreeStyleA, error bars/.cd, error bar style={line width=0.4pt}] table[x=K, y=mean\FigThreeKeyA, y error=sd\FigThreeKeyA, col sep=comma]{data/fig3_regret_vs_k.csv};
+\addlegendentry{\FigThreeNameA}
+\addplot+[\FigThreeStyleB, error bars/.cd, error bar style={line width=0.4pt}] table[x=K, y=mean\FigThreeKeyB, y error=sd\FigThreeKeyB, col sep=comma]{data/fig3_regret_vs_k.csv};
+\addlegendentry{\FigThreeNameB}
+\addplot+[\FigThreeStyleC, error bars/.cd, error bar style={line width=0.4pt}] table[x=K, y=mean\FigThreeKeyC, y error=sd\FigThreeKeyC, col sep=comma]{data/fig3_regret_vs_k.csv};
+\addlegendentry{\FigThreeNameC}
+\addplot+[\FigThreeStyleD, error bars/.cd, error bar style={line width=0.4pt}] table[x=K, y=mean\FigThreeKeyD, y error=sd\FigThreeKeyD, col sep=comma]{data/fig3_regret_vs_k.csv};
+\addlegendentry{\FigThreeNameD}
+\end{axis}
+\end{tikzpicture}
+\caption{The input-based baselines KM and KMed reach a lower test regret than VITA at every number of representative days. Mean regret over the twelve test instances (four held-out years under three carbon prices; VITA also over three seeds); bars extend one standard deviation above the mean. The four baselines with the lowest mean regret over all $K$ are shown; Table~\ref{tab:main} lists all methods for $K=8$ and 16.}
+\label{fig:regretk}
+\end{figure}

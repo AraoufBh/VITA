@@ -1,0 +1,32 @@
+\begin{table*}[!t]
+\centering
+\caption{Results on the Temporal Test Set (Four Test Years $\times$ Three Carbon Prices; Mean $\pm$ Standard Deviation)\label{tab:main}}
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{@{}clcccccc@{}}
+\toprule
+$K$ & Method & Regret [\%] $\downarrow$ & Cost error [\%] $\downarrow$ & Capacity dev. [\%] $\downarrow$ & Unserved [\%] $\downarrow$ & CO$_2$ error [\%] $\downarrow$ & Runtime [s] $\downarrow$ \\
+\midrule
+\multirow{9}{*}{8} & VITA & 0.800 $\pm$ 0.753 & 9.95 $\pm$ 4.63 & 10.2 $\pm$ 6.0 & \textbf{0.0000 $\pm$ 0.0000} & 0.73 $\pm$ 1.57 & \textbf{0.45 $\pm$ 0.06} \\
+ & KM & \textbf{0.295 $\pm$ 0.132} & 7.22 $\pm$ 0.67 & \textbf{5.0 $\pm$ 2.6} & \textbf{0.0000 $\pm$ 0.0000} & 0.49 $\pm$ 0.82 & 0.68 $\pm$ 0.16 \\
+ & KMed & \underline{0.437 $\pm$ 0.146} & 6.26 $\pm$ 3.77 & 8.9 $\pm$ 4.2 & \textbf{0.0000 $\pm$ 0.0000} & 0.48 $\pm$ 0.77 & 0.65 $\pm$ 0.17 \\
+ & HC & 0.450 $\pm$ 0.194 & 6.98 $\pm$ 4.45 & 8.2 $\pm$ 4.3 & \textbf{0.0000 $\pm$ 0.0000} & \textbf{0.33 $\pm$ 0.71} & 0.61 $\pm$ 0.12 \\
+ & HC+X & 0.754 $\pm$ 0.809 & \textbf{3.28 $\pm$ 1.84} & 7.8 $\pm$ 4.2 & \textbf{0.0000 $\pm$ 0.0000} & 0.62 $\pm$ 0.96 & 0.64 $\pm$ 0.18 \\
+ & DP & 0.581 $\pm$ 0.300 & 6.60 $\pm$ 1.94 & \underline{6.2 $\pm$ 1.1} & \textbf{0.0000 $\pm$ 0.0000} & 0.70 $\pm$ 0.93 & 0.62 $\pm$ 0.14 \\
+ & AE & 0.536 $\pm$ 0.172 & 6.90 $\pm$ 1.60 & 8.5 $\pm$ 2.1 & \textbf{0.0000 $\pm$ 0.0000} & 0.56 $\pm$ 0.80 & \underline{0.59 $\pm$ 0.13} \\
+ & CO & 0.658 $\pm$ 0.919 & 10.04 $\pm$ 4.41 & 8.2 $\pm$ 7.7 & \textbf{0.0000 $\pm$ 0.0000} & \underline{0.42 $\pm$ 0.74} & 4.83 $\pm$ 1.11 \\
+ & IX & 0.917 $\pm$ 0.881 & \underline{6.17 $\pm$ 5.16} & 10.3 $\pm$ 7.0 & \textbf{0.0000 $\pm$ 0.0000} & 0.78 $\pm$ 1.16 & 19.32 $\pm$ 5.63 \\
+\midrule
+\multirow{9}{*}{16} & VITA & 0.494 $\pm$ 0.453 & 7.98 $\pm$ 4.15 & 6.9 $\pm$ 4.5 & \textbf{0.0000 $\pm$ 0.0000} & 0.68 $\pm$ 1.51 & \textbf{1.40 $\pm$ 0.17} \\
+ & KM & \underline{0.259 $\pm$ 0.081} & 5.15 $\pm$ 0.62 & 4.7 $\pm$ 1.5 & \textbf{0.0000 $\pm$ 0.0000} & 0.50 $\pm$ 1.06 & 2.08 $\pm$ 0.63 \\
+ & KMed$^{\dagger}$ & \textbf{0.117 $\pm$ 0.076} & 3.10 $\pm$ 2.07 & \textbf{3.2 $\pm$ 1.4} & \textbf{0.0000 $\pm$ 0.0000} & 0.41 $\pm$ 0.73 & 2.13 $\pm$ 0.58 \\
+ & HC & 0.400 $\pm$ 0.215 & 2.93 $\pm$ 1.29 & 9.8 $\pm$ 6.4 & \textbf{0.0000 $\pm$ 0.0000} & \textbf{0.26 $\pm$ 0.70} & 2.08 $\pm$ 0.52 \\
+ & HC+X & 0.382 $\pm$ 0.201 & \underline{2.30 $\pm$ 1.23} & 8.4 $\pm$ 5.7 & \textbf{0.0000 $\pm$ 0.0000} & 0.38 $\pm$ 0.71 & \underline{1.88 $\pm$ 0.44} \\
+ & DP & 0.453 $\pm$ 0.251 & 4.60 $\pm$ 1.15 & \underline{4.4 $\pm$ 1.1} & \textbf{0.0000 $\pm$ 0.0000} & 0.48 $\pm$ 0.62 & 2.00 $\pm$ 0.41 \\
+ & AE & 0.377 $\pm$ 0.276 & 5.04 $\pm$ 1.48 & 7.7 $\pm$ 3.1 & \textbf{0.0000 $\pm$ 0.0000} & 0.43 $\pm$ 0.84 & 1.95 $\pm$ 0.47 \\
+ & CO & 0.312 $\pm$ 0.369 & 3.94 $\pm$ 1.61 & 7.5 $\pm$ 8.7 & \textbf{0.0000 $\pm$ 0.0001} & \underline{0.34 $\pm$ 0.73} & 6.22 $\pm$ 1.40 \\
+ & IX & 0.339 $\pm$ 0.221 & \textbf{0.89 $\pm$ 0.75} & 7.5 $\pm$ 4.7 & \textbf{0.0000 $\pm$ 0.0000} & 0.35 $\pm$ 0.71 & 26.44 $\pm$ 7.38 \\
+\bottomrule
+\end{tabular}
+\par\vspace{1mm}\parbox{0.97\textwidth}{\footnotesize $n=12$ test instances per $K$; VITA statistics pool three seeds. $^{\ast}$ ($^{\dagger}$): VITA has lower (higher) regret than the baseline under a two-sided Wilcoxon signed-rank test on paired instance regrets (VITA averaged over seeds), Holm-corrected over the eight baselines, $p<0.05$, $n=12$. Bold: best mean; underlined: second best. Runtime: deployment (aggregation and aggregated design LP, plus full-resolution solves for IX).}
+\end{table*}
