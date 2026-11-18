@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "VITA: value-informed neural temporal aggregation for sector-coupled industrial energy hubs"
+title: "Neural Temporal Aggregation for the Optimal Design of Multi-Energy Industrial Hubs"
 authors:
   - family-names: Bahi
     given-names: Abderaouf
